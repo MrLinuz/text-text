@@ -60,6 +60,16 @@
     }).then(() => {
       console.log('Hello Python');
     })
+
+    new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve()
+      }, 1000);
+    }).then(() => {
+      console.log('Hello World');
+    }).catch((err) => {
+      console.log(err);
+    })
   </script>
 </body>
 
